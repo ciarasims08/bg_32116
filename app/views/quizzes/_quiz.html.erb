@@ -1,0 +1,13 @@
+<p>
+	<strong>Name:</strong>
+	<%= quiz.name %> 
+</p>
+<p>
+	<%= link_to 'Show', category_quiz_path(@category, quiz) %>
+</p>
+
+<p>
+<%= link_to 'Delete Quiz', [quiz.category, quiz],
+			method: :delete,
+			data: { confirm: 'Are you sure?' } %>
+</p>

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :categories
+  resources :categories do
+    resources :quizzes
+  end
+  
   get "/:page" => "welcome#show"
 
   

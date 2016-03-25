@@ -3,6 +3,11 @@
 	<%= @category.name %>
 </p>
 
+<h2>Quizzes:</h2>
+<%= render @category.quizzes %>
 
-<%= link_to 'Home', categories_path %> | 
+<h2>New Quiz</h2>
+<%= render 'quizzes/form' %>
+
+<%= link_to 'Home', categories_path %> 
 <%= link_to 'Edit', edit_category_path(@category) %>
