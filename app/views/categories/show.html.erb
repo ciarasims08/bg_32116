@@ -1,10 +1,7 @@
-<tr>
-	<td><%= category.name %></td>
-	<td><%= category.games %></td>
-	<td><%= link_to 'Show', categories_path(category) %></td>
-	<td><%= link_to 'Edit', edit_category_path(category) %></td>
-	<td><%= link_to 'Destroy', categories_path(category), method: :delete, data: { confirm: 'Are you sure'} %></td>
-</tr>
+<p>
+	<strong>Name:</strong>
+	<%= @category.name %>
+</p>
 
 
 <%= link_to 'Home', categories_path %> | 
