@@ -1,7 +1,8 @@
-<h1>Categories</h1>
+<h3>Create a new category</h3>
+<%= link_to 'New Category', new_category_path %>
+
+<h1>Current categories:</h1>
 <% @categories.each do |category| %>
 	<p><%= category.name %></p>
 	<p><%= category.games %></p>
 <% end %>
-
-<h1>testing!!</h1>

@@ -1,1 +1,7 @@
-<h1>Show category</h1>
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<%= link_to 'Home', categories_path %> | 
+<%= link_to 'Edit', edit_category_path(@category) %>
