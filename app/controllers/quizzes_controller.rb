@@ -1,8 +1,14 @@
 class QuizzesController < ApplicationController
+  def new
+    @quiz = Quiz.new
+    @quiz.questions.build
+  end
   def index
     @quizzes = Quiz.all
   end
+  
   def show
+    @category = Category.find(params[:category_id])
     @quiz = Quiz.find(params[:id])
   end
 
