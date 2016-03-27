@@ -1,0 +1,11 @@
+<p>
+	<strong>Question</strong>
+	<%= question.name %>
+</p>
+<p>Testing!</p>
+
+<p>
+<%= link_to 'Delete Question', [question.quiz, question],
+			method: :delete,
+			data: { confirm: 'Are you sure?' } %>
+</p>

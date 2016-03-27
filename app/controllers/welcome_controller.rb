@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
 	def index
+		@categories = Category.all
+		@quizzes = Quiz.all
 	end
 
 	def show

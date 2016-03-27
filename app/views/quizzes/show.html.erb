@@ -1,4 +1,14 @@
 <h1><%= @quiz.category.name %> Quizzes:</h1>
 <%= @quiz.name %>
 
+<h3>Questions</h3>
+<table>
+	<tr>
+		<th>Name</th>
+	</tr>
+	<%= render @quiz.questions %>
+</table>
+
+
+
 <%= link_to 'Back', category_path(@quiz.category) %>

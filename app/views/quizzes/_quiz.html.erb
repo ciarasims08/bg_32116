@@ -1,13 +1,6 @@
-<p>
-	<strong>Name:</strong>
-	<%= quiz.name %> 
-</p>
-<p>
-	<%= link_to 'Show', category_quiz_path(@category, quiz) %>
-</p>
-
-<p>
-<%= link_to 'Delete Quiz', [quiz.category, quiz],
-			method: :delete,
-			data: { confirm: 'Are you sure?' } %>
-</p>
+<tr>
+	<td><%= quiz.name %></td>
+	<td><%= link_to 'Play', category_quiz_path(@category, quiz) %></td>
+	<td><%= link_to 'Delete Quiz', [quiz.category, quiz], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
+<br>

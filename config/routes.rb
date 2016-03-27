@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :categories do
-    resources :quizzes
+    resources :quizzes do
+      resources :questions
+    end
   end
   
   get "/:page" => "welcome#show"
